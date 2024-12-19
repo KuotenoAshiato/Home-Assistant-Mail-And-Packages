@@ -224,17 +224,18 @@ SENSOR_DATA = {
     },
     # UPS
     "ups_delivered": {
-        "email": ["mcinfo@ups.com"],
+        "email": ["mcinfo@ups.com","pkginfo@ups.com"],
         "subject": [
             "Your UPS Package was delivered",
             "Your UPS Packages were delivered",
             "Your UPS Parcel was delivered",
             "Your UPS Parcels were delivered",
             "Votre colis UPS a été livré",
+            "Paket wurde zugestellt"
         ],
     },
     "ups_delivering": {
-        "email": ["mcinfo@ups.com"],
+        "email": ["mcinfo@ups.com","pkginfo@ups.com"],
         "subject": [
             "UPS Update: Package Scheduled for Delivery Today",
             "UPS Update: Follow Your Delivery on a Live Map",
@@ -296,7 +297,7 @@ SENSOR_DATA = {
         "subject": [
             "DHL On Demand Delivery",
             "Powiadomienie o przesyłce",
-            "Paket wurde zugestellt",
+            "wurde zugestellt",
             "DHL Shipment Notification",
         ],
         "body": [
@@ -319,7 +320,7 @@ SENSOR_DATA = {
             "DHL On Demand Delivery",
             "Paket kommt heute",
             "kommt heute",
-            "Paket wird gleich zugestellt",
+            "wird gleich zugestellt",
             "Powiadomienie o przesyłce",
             "DHL Shipment Notification",
         ],
@@ -459,6 +460,7 @@ SENSOR_DATA = {
         ],
         "subject": [
             "Ihr Paket ist da!",
+            "Die Abstellung Ihres DPD Pakets ist erfolgt",
         ],
     },
     "dpd_delivering": {
@@ -485,33 +487,39 @@ SENSOR_DATA = {
         "email": [
             "noreply@gls-group.eu",
             "powiadomienia@allegromail.pl",
+            "no-reply@gls-pakete.de"
         ],
         "subject": [
             "informacja o dostawie",
-            "wurde durch GLS zugestellt",
+            "wurde durch GLS",
         ],
         "body": [
             "została dzisiaj dostarczona",
             "Adresse erfolgreich zugestellt",
+            "Am Wunschort abgestellt"
         ],
     },
     "gls_delivering": {
         "email": [
             "noreply@gls-group.eu",
             "powiadomienia@allegromail.pl",
+            "no-reply@gls-pakete.de"
         ],
         "subject": [
             "paczka w drodze",
             "ist unterwegs",
+            "kommt heute",
         ],
         "body": [
             "Zespół GLS",
             "GLS-Team",
+            "fast da"
         ],
     },
     "gls_packages": {},
     "gls_tracking": {
         # https://gls-group.eu/GROUP/en/parcel-tracking?match=51687952111
+        # https://gls-rtt.com/#/DE/de/95368751054
         "pattern": ["\\d{11,12}"]
     },
     # Australia Post
