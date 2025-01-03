@@ -224,18 +224,18 @@ SENSOR_DATA = {
     },
     # UPS
     "ups_delivered": {
-        "email": ["mcinfo@ups.com","pkginfo@ups.com"],
+        "email": ["mcinfo@ups.com", "pkginfo@ups.com"],
         "subject": [
             "Your UPS Package was delivered",
             "Your UPS Packages were delivered",
             "Your UPS Parcel was delivered",
             "Your UPS Parcels were delivered",
             "Votre colis UPS a été livré",
-            "Paket wurde zugestellt"
+            "Paket wurde zugestellt",
         ],
     },
     "ups_delivering": {
-        "email": ["mcinfo@ups.com","pkginfo@ups.com"],
+        "email": ["mcinfo@ups.com", "pkginfo@ups.com"],
         "subject": [
             "UPS Update: Package Scheduled for Delivery Today",
             "UPS Update: Follow Your Delivery on a Live Map",
@@ -487,7 +487,7 @@ SENSOR_DATA = {
         "email": [
             "noreply@gls-group.eu",
             "powiadomienia@allegromail.pl",
-            "no-reply@gls-pakete.de"
+            "no-reply@gls-pakete.de",
         ],
         "subject": [
             "informacja o dostawie",
@@ -496,25 +496,21 @@ SENSOR_DATA = {
         "body": [
             "została dzisiaj dostarczona",
             "Adresse erfolgreich zugestellt",
-            "Am Wunschort abgestellt"
+            "Am Wunschort abgestellt",
         ],
     },
     "gls_delivering": {
         "email": [
             "noreply@gls-group.eu",
             "powiadomienia@allegromail.pl",
-            "no-reply@gls-pakete.de"
+            "no-reply@gls-pakete.de",
         ],
         "subject": [
             "paczka w drodze",
             "ist unterwegs",
             "kommt heute",
         ],
-        "body": [
-            "Zespół GLS",
-            "GLS-Team",
-            "fast da"
-        ],
+        "body": ["Zespół GLS", "GLS-Team", "fast da"],
     },
     "gls_packages": {},
     "gls_tracking": {
